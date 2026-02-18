@@ -1,12 +1,12 @@
 import React from "react";
-import { fetchphoto } from "./api/mediaApi";
+import { fetchphoto, fetchvideo } from "./api/mediaApi";
 
 const App = () => {
   return (
     <div>
       <button
         onClick={() => {
-          fetchphoto("dog");
+          fetchvideo("dog");
         }}
       >
         Get Photos
