@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { fetchphoto } from "./api/mediaApi";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <button
+        onClick={() => {
+          fetchphoto("dog");
+        }}
+      >
+        Get Photos
+      </button>
+    </div>
+  );
+};
 
-export default App
+export default App;
