@@ -1,16 +1,11 @@
 import React from "react";
 import { fetchphoto, fetchvideo } from "./api/mediaApi";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
-    <div>
-      <button
-        onClick={() => {
-          fetchvideo("dog");
-        }}
-      >
-        Get Photos
-      </button>
+    <div className="h-screen text-white w-full bg-gray-950">
+      <SearchBar />
     </div>
   );
 };
